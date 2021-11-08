@@ -1,34 +1,5 @@
 <div>
-  <mat-toolbar color="primary">
-    <span style="margin: 20px;"><mat-icon>mood</mat-icon></span>
-
-    <span>My Application</span>
-
-    <button mat-icon-button [mat-menu-trigger-for]="menu" style="margin-left: 1400px;">
-      <mat-icon>more_vert</mat-icon>
-    </button>
-  </mat-toolbar>
-  <mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item>Option 1</button>
-    <button mat-menu-item>Option 2</button>
-  </mat-menu>
-
-  <mat-card>
-    <button mat-button>All</button>
-    <button mat-raised-button>Of</button>
-    <button mat-raised-button color="primary">The</button>
-    <button mat-raised-button color="accent">Buttons</button>
-  </mat-card>
-
-    <button color="primary" mat-icon-button aria-label="Example icon-button with a heart icon">
-      <mat-icon>favorite</mat-icon>
-    </button>
-
-  <span class="done">
-    <button mat-fab>
-      <mat-icon>check circle</mat-icon>
-    </button>
-  </span>
+  <app-navbar></app-navbar>
 </div>
 
 <router-outlet></router-outlet>

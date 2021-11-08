@@ -1,0 +1,32 @@
+<!-- <mat-toolbar color="primary">
+    <span style="margin: 20px;"><mat-icon>mood</mat-icon></span>
+
+    <span>My Application</span>
+    <button mat-icon-button [mat-menu-trigger-for]="menu" style="margin-left: 1400px;">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-menu x-position="before" #menu="matMenu">
+    <button mat-menu-item>Option 1</button>
+    <button mat-menu-item>Option 2</button>
+  </mat-menu>
+ -->
+  
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1>SimpleCRM</h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/first-component'"> Accounts </a>
+        <a mat-button [routerLink]="'/'"> Create Account </a>
+        <a mat-button [routerLink]="'/'"> Contacts </a>
+        <a mat-button [routerLink]="'/table'"> Create Contact </a>
+        <a mat-button [routerLink]="'/activities'"> Activities </a>
+        <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>
+  
+      </div>
+    </mat-toolbar-row>
+  
